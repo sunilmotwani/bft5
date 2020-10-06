@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='icon' href='favicon.png' type='image/x-icon'/ >
+</head>
+<body>
+    <a href="index.html"><img src="images/logo.jpg" alt="HomePage" height=100 width=100> </a><br>
+    <a href="02-moretags.html">More Tags</a><br>
+    <a href="03-lists.html">Lists</a><br>
+    <a href="04-images.html">Images</a><br>
+    <a href="05-links.html">Links</a><br>
+    <a href="06-tables.html">Tables</a><br>
+    <a href="07-forms.html">Forms</a><br>
+    <h1>HTML Forms</h1>
+    <form action="thanks.html" method="get">
+        <table width=600 align=center border=1>
+            <tr>
+                <td colspan="2">
+                    <h2>Registration Details</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fname">Enter your First Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="fname" name="fname" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="lname">Enter your Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="lname" name="lname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="psw">Enter your Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="psw" name="psw" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dob">Enter your Date of Birth:</label>
+                </td>
+                <td>
+                    <input type="date" id="dob" name="dob" required>
+
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Select your Gender:
+                </td>
+                <td>
+                    <input type="radio" id="Male" name="Gender" value="Male" >
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" value="Female" required>
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Other" name="Gender" value="Other">
+                    <label for="Other">Other</label>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>
+                   Check your Interests:
+                </td>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobby1" value="Music"> 
+                    <label for="hobby1">Music</label>
+                    <input type="checkbox" id="hobby2" name="hobby2" value="Dance">
+                    <label for="hobby2">Dance</label> <br>
+                    <input type="checkbox" id="newsletter" name="newsletter" value="Yes" checked>
+                   
+                    <label for="newsletter">Send me Newsletter</label>
+                   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="country">Select your Country:</label>
+                </td>
+                <td>
+                   <select name="country" id="country">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Brazil">Brazil</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="India" selected>India</option>
+                    <option value="USA">United States of America</option>
+                    <option value="Uragua">Uragua</option>
+
+                   </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="photo">Upload you Photo:</label>
+                </td>
+                <td>
+                    <input type="file" id="photo" name="photo">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="aboutme">Write 300 words about yourself:</label>
+                </td>
+                <td>
+                  <textarea name="aboutme" id="aboutme" cols="30" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+                <td>
+                   <button type="reset">Reset Form</button>
+                </td>
+            </tr>
+        </table>
+        <input type="hidden" name="code" value="abc">
+    </form>
+</body>
+</html>
